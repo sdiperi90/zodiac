@@ -1,0 +1,116 @@
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .zodiac-images-component {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .form-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 200px;
+
+        h1 {
+            font-size: 0.8rem;
+            margin: 5px;
+        }
+
+        select {
+            font-size: 0.7rem;
+            width: 100%;
+            margin: 5px;
+            height: 30px;
+        }
+
+        .zodiac-container {
+            width: auto;
+        }
+    }
+
+    .submit-btn {
+        height: 20px;
+        width: 80%;
+        border-radius: 10%;
+        font-size: 0.7rem;
+    }
+
+    .zodiac-title {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .sub-container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .traits {
+        padding: 0px 5px;
+        font-size: 1.4rem;
+    }
+
+    .famous-people {
+        li {
+            padding: 10px;
+            width: 40%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .zodiac-images-component {
+        margin-top: 50px;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .form-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 15px;
+        text-align: center;
+
+        h1 {
+            font-size: 0.8rem;
+            margin: 5px;
+        }
+
+        select {
+            font-size: 0.7rem;
+            width: 100%;
+            margin: 5px;
+            height: 30px;
+        }
+    }
+
+    .submit-btn {
+        height: 20px;
+        width: 80%;
+        border-radius: 10%;
+        font-size: 0.7rem;
+    }
+
+    .zodiac-title {
+        padding: 0px;
+    }
+
+    .sub-container {
+        width: 100%;
+        padding: 0px;
+    }
+}

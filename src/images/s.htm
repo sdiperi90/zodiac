@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:3000/zodiac/taurus -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+        <link rel="manifest" href="http://localhost:3000/manifest.json">
+        <link rel="stylesheet" href="./s_files/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="./s_files/css" rel="stylesheet">
+        <link href="./s_files/css(1)" rel="stylesheet">
+        <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+        <title>React App</title>
+    <style type="text/css">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.famous-people {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+  .famous-people li {
+    padding: 10px; }
+
+.traits-container {
+  display: flex;
+  justify-content: center; }
+
+.traits-container {
+  margin: 20px; }
+
+.zodiac-images-component {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 10px; }
+  .zodiac-images-component img {
+    width: 12vw;
+    height: 20vh;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.27);
+    border-radius: 50%; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px; }
+
+.form-container {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(129, 211, 238, 0.4);
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px; }
+  .form-container h1 {
+    font-size: 2rem;
+    margin: 5px; }
+  .form-container select {
+    font-size: 1.5rem;
+    width: 150px;
+    margin: 5px;
+    height: 50px; }
+
+.submit-btn {
+  height: 50px;
+  width: 200px;
+  font-size: 1.5rem;
+  border-radius: 10px; }
+
+.header {
+  background: #1373a5;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  align-items: center;
+  font-family: "Ultra", serif;
+  padding: 5px 0px;
+  height: 70px; }
+  .header img {
+    width: 200px;
+    margin-top: 70px; }
+
+a:link {
+  text-decoration: none; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background: #1373a5;
+  width: 100vw;
+  padding: 5px 0px; }
+
+.zodiac-title {
+  font-size: 2rem;
+  box-shadow: 0px 2px 2px 2px grey; }
+  .zodiac-title h1 {
+    background: #65bbff;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    font-family: "Ultra", serif; }
+
+.zodiac-container {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 50px;
+  background: rgba(129, 211, 238, 0.4);
+  text-align: center; }
+
+.sub-container {
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin: 30px;
+  padding: 20px;
+  line-height: 2;
+  color: black;
+  border-radius: 20px;
+  width: 60%;
+  margin: 100px auto;
+  box-shadow: 0px 2px 2px 4px grey; }
+
+.sub-container {
+  width: 60%; }
+  .sub-container h2 {
+    padding-bottom: 10px;
+    font-weight: 700; }
+  .sub-container li {
+    line-height: 1.5; }
+
+i {
+  font-size: 1.5rem;
+  margin: 5px; }
+
+.traits {
+  padding: 0px 100px; }
+
+.famous-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .famous-list li {
+    width: 30%; }
+
+.zodiac-page-image img {
+  width: 20%;
+  margin-top: 40px;
+  box-shadow: 0px 2px 2px 4px grey;
+  border-radius: 20px; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%; }
+  .zodiac-images-component img {
+    width: 70px;
+    height: 70px; }
+  .form-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 200px; }
+    .form-container h1 {
+      font-size: 0.8rem;
+      margin: 5px; }
+    .form-container select {
+      font-size: 0.7rem;
+      width: 100%;
+      margin: 5px;
+      height: 30px; }
+    .form-container .zodiac-container {
+      width: auto; }
+  .submit-btn {
+    height: 20px;
+    width: 80%;
+    border-radius: 10%;
+    font-size: 0.7rem; }
+  .zodiac-title {
+    padding: 0px;
+    width: 100%; }
+  .sub-container {
+    width: 100%;
+    padding: 0px; }
+  .traits {
+    padding: 0px 5px;
+    font-size: 1.4rem; }
+  .famous-people li {
+    padding: 10px;
+    width: 40%; } }
+
+@media only screen and (max-width: 1200px) {
+  .zodiac-images-component {
+    margin-top: 50px; }
+    .zodiac-images-component img {
+      width: 100px;
+      height: 100px; }
+  .form-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center; }
+    .form-container h1 {
+      font-size: 0.8rem;
+      margin: 5px; }
+    .form-container select {
+      font-size: 0.7rem;
+      width: 100%;
+      margin: 5px;
+      height: 30px; }
+  .submit-btn {
+    height: 20px;
+    width: 80%;
+    border-radius: 10%;
+    font-size: 0.7rem; }
+  .zodiac-title {
+    padding: 0px; }
+  .sub-container {
+    width: 100%;
+    padding: 0px; } }
+</style><script charset="utf-8" src="./s_files/main.05614dfea286ef67f64e.hot-update.js"></script><script charset="utf-8" src="./s_files/main.c95f0065c1fd69428a56.hot-update.js"></script><script charset="utf-8" src="./s_files/main.83234253c4b57cb07cd1.hot-update.js"></script><script charset="utf-8" src="./s_files/main.d0d330ddf9d10de02c89.hot-update.js"></script><script charset="utf-8" src="./s_files/main.3c644908ac3af1bb95f9.hot-update.js"></script><script charset="utf-8" src="./s_files/main.c3450499a5ae0a20986a.hot-update.js"></script><script charset="utf-8" src="./s_files/main.795c56a842b1071aab59.hot-update.js"></script><script charset="utf-8" src="./s_files/main.01161bd94de7e9aff620.hot-update.js"></script><script charset="utf-8" src="./s_files/main.ad9ec62566df1e233b29.hot-update.js"></script><script charset="utf-8" src="./s_files/main.a69c296dc109ed1a46ce.hot-update.js"></script><script charset="utf-8" src="./s_files/main.fed7aaa86263d370aca8.hot-update.js"></script><script charset="utf-8" src="./s_files/main.1ac3d582bf399b23eec5.hot-update.js"></script><script charset="utf-8" src="./s_files/main.3333476e757c75763d06.hot-update.js"></script><script charset="utf-8" src="./s_files/main.678122cab9c658df3d62.hot-update.js"></script></head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"><div class="App"><header class="background-image-2"><nav class="header"><a href="http://localhost:3000/"><img src="./s_files/logo-4.e76feac7.png"></a></nav></header><main><div class="zodiac-container"><div class="zodiac-title"><h1>Taurus (April 20 - May 20)</h1></div><div class="zodiac-page-image"><img src="./s_files/taurus.17786b41.jpg"></div><div class="sub-container"><h2>The Ruling Planet is Venus,  the planet of beauty and love</h2><h2>Vibe: Determined energy</h2></div><div class="traits-container sub-container"><div class="traits"><h2>Good Traits:</h2><ul><li>Patient</li><li> organized</li><li> supportive</li><li> romantic</li><li> careful</li><li> dedicated</li></ul></div><div class="traits"><h2>Bad Traits:</h2><ul><li>Overindulgent</li><li> stubborn</li><li> lazy</li><li> vain</li><li> cheap</li><li> too cautious</li></ul></div></div><div class="sub-container"><h2>Secret Wishes: </h2><ul><li>To own the best of everything</li></ul></div><div class="sub-container"><h2>Hates</h2><p>Being rushed,  wasting money,  dirty things,  hotels,  mornings, </p></div><div class="sub-container"><h2>Favorites</h2><p>Photography,  the mountains,  great music,  rich/gourmet food,  satin sheets, </p></div><div class="sub-container"><h2>Mental Traits</h2><p>People born under this sign love nice things; they can come across as extremely materialistic, or as people who enjoy the finer things in life.  They are sometimes slow to act, great at managing money, lovers of the outdoors (and of doing outdoor activities such as farming or gardening), very practical and down to earth.  Taurus people typically dislike change. </p></div><div class="sub-container"><h2>Taurus is compatibile with</h2><ul><li>Capricorn</li><li>Virgo</li><li>Pisces</li><li>Cancer</li></ul></div><div class="famous-people sub-container "><div><h2>Famous people:</h2><ul class="famous-list"><li>Adele</li><li> Al Pacino</li><li> David Beckham</li><li> Stevie Wonder</li><li> Donatella Versace</li><li> Cher</li><li> Robert Pattinson</li><li> Chris Brown</li><li> Channing Tatum</li><li> The Rock</li><li> Gigi Hadid</li><li> Queen Elizabeth II</li><li> Sam Smith</li><li> Megan Fox</li><li> Meek Mill</li><li> George Clooney</li><li> Lena Dunham</li><li> Tina Fey</li><li> Christian Lacroix</li><li> Jean-Paul Gaultier</li><li> Valentino Garavani</li><li> William Shakespeare</li><li> Harper Lee</li><li> James Monroe</li><li> James Buchanan</li><li> Ulysses S. Grant</li><li> Harry S. Truman</li></ul></div></div></div></main><div class="footer"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i><i class="fab fa-pinterest-square"></i></div></div></div>
+        <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    --><script src="./s_files/bundle.js"></script><script src="./s_files/0.chunk.js"></script><script src="./s_files/main.chunk.js"></script><script src="./s_files/main.e5139a29d9adf9c0afb2.hot-update.js"></script>
+
+</body></html>
